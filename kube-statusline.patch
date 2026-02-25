@@ -1,5 +1,5 @@
 diff --git i/src/nord-status-content.conf w/src/nord-status-content.conf
-index 11980e1..0da7fbe 100644
+index 11980e1..a048567 100644
 --- i/src/nord-status-content.conf
 +++ w/src/nord-status-content.conf
 @@ -14,7 +14,7 @@ set -g @prefix_highlight_copy_mode_attr "fg=brightcyan,bg=black,bold"
@@ -7,7 +7,7 @@ index 11980e1..0da7fbe 100644
  #+--- Bars ---+
  set -g status-left "#[fg=black,bg=blue,bold] #S #[fg=blue,bg=black,nobold,noitalics,nounderscore]"
 -set -g status-right "#{prefix_highlight}#[fg=brightblack,bg=black,nobold,noitalics,nounderscore]#[fg=white,bg=brightblack] ${NORD_TMUX_STATUS_DATE_FORMAT} #[fg=white,bg=brightblack,nobold,noitalics,nounderscore]#[fg=white,bg=brightblack] ${NORD_TMUX_STATUS_TIME_FORMAT} #[fg=cyan,bg=brightblack,nobold,noitalics,nounderscore]#[fg=black,bg=cyan,bold] #H "
-+set -g status-right "#{prefix_highlight}#[fg=brightblack,bg=black,nobold,noitalics,nounderscore]#[fg=white,bg=brightblack] #(kubens -c) #[fg=white,bg=brightblack,nobold,noitalics,nounderscore]#[fg=white,bg=brightblack] #(kubectx -c) #[fg=cyan,bg=brightblack,nobold,noitalics,nounderscore]#[fg=black,bg=cyan,bold] lappy286 "
++set -g status-right "#{prefix_highlight}#[fg=brightblack,bg=black,nobold,noitalics,nounderscore] #[fg=white,bg=brightblack] #(kubens -c) #[fg=white,bg=brightblack,nobold,noitalics,nounderscore]#[fg=white,bg=brightblack] #(kubectx -c) #[fg=black]#[fg=cyan,bg=black,nobold,noitalics,nounderscore]#[fg=black,bg=cyan,bold] lappy286 "
  
  #+--- Windows ---+
  set -g window-status-format "#[fg=black,bg=brightblack,nobold,noitalics,nounderscore] #[fg=white,bg=brightblack]#I #[fg=white,bg=brightblack,nobold,noitalics,nounderscore] #[fg=white,bg=brightblack]#W #F #[fg=brightblack,bg=black,nobold,noitalics,nounderscore]"
